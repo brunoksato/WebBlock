@@ -79,42 +79,61 @@ li a:hover, li a:visited{
 
 .thumb1{
   height:50px;
-  margin: 10px 0px 10px 0px;
-  float: left;
-  position: relative;
+  /*margin: 10px 0px 10px 0px;*/
 }
 
-.thumbleft2{
+.thumb2{
   height:70px;
-  margin: 10px 14px 10px 0px;
-  float: left;
-  position: relative;
+ /* margin: 10px 14px 10px 0px;*/
 }
 
-.thumbright2{
+/*.thumbright2{
   height:70px;
   margin: 10px 0px 10px 0px;
-  float: left;
-  position: relative;
-}
+}*/
 
 .thumb3{
   height:150px;
-  margin: 10px 0px 10px 0px;
-  float: left;
-  position: relative;
+/*  margin: 10px 0px 10px 0px;*/
 }
 
 .thumbRetangulo1{
   height:200px;
-  margin: 10px 0px 10px 0px;
-  float: left;
-  position: relative;
+/*  margin: 10px 0px 10px 0px;*/
 }
 
 .thumbRetangulo2{
   height:100px;
-  margin: 10px 0px 10px 0px;
+/*  margin: 10px 0px 10px 0px;*/
+}
+
+.floatrelative{
   float: left;
   position: relative;
 }
+
+.left1{ margin-left: 8.5%;}
+
+.left2{ margin-left: 50%; }
+
+.left3{ margin-left: 80%; }
+
+.right1{ margin-right: 8.5%; }
+
+.right2{ margin-right: 50%; }
+
+.right3{ margin-right: 80%; }
+
+.top0{ margin-top: 4.5%;}
+
+.top1{ margin-top: 10%; }
+
+.top2{ margin-top: 50%; }
+
+.top3{ margin-top: 80%; }
+
+.bottom1{ margin-bottom: 10%; }
+
+.bottom2{ margin-bottom: 50%; }
+
+.bottom3{ margin-bottom: 80%; }
