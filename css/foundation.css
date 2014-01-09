@@ -145,11 +145,17 @@ abbr { text-transform: none; }
 
 .row .two { width: 16.667%; }
 
+.row .twomiddle { width: 19.667%; }
+
 .row .three { width: 25%; }
+
+.row .threemiddle { width: 29%; }
 
 .row .four { width: 33.333%; }
 
 .row .five { width: 41.667%; }
+
+.row .fivemidlle { width: 45.6%; }
 
 .row .six { width: 50%; }
 
