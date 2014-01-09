@@ -1,14 +1,9 @@
-/**
- * Parallax Scrolling Tutorial
- * For Smashing Magazine
- * July 2011
- *
- * Author: Richard Shepherd
- *                   www.richardshepherd.com
- *                    @richardshepherd
- */
 
 
+input[type="text"]{
+  height:25px;
+  width: 230px;
+}
 
 #top{
   width: 100%;
@@ -17,30 +12,29 @@
   background-color: #fff;
 }
 
-#menu{
-  width: 1000px;
-  height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
+.menu{
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  background-color: #0053a0;
 }
 
 ul li{
   display: inline-block;
   list-style-type: none;
-  padding-top: 5px;
-  padding-left: 30px;
+  padding-top: 2px;
   list-style: none;
 }
 
 li a{
   font-family: 'Lobster', cursive;
-  padding-left: 25px;
-  font-size: 1.9em;
+  font-size: 1.2em;
   color: #fff;
   text-decoration: none;
+}
+
+li:nth-last-child(-n+2){
+  padding-left: 30px;
 }
 
 
@@ -68,3 +62,21 @@ li a:hover, li a:visited{
    border-radius: 10px;
 }
 
+#content{
+  background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
+  background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
+  background-image: -o-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFFFFF), color-stop(1, #6CD5EF));
+  background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
+  background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #6CD5EF 100%);
+
+  width: 100%;
+  height: 830px;
+}
+
+.thumb{
+  width: 220px;
+  margin: 10px 0px 10px 0px;
+  float: left;
+  position: relative;
+}
