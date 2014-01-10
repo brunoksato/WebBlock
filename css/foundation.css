@@ -151,6 +151,8 @@ abbr { text-transform: none; }
 
 .row .threemiddle { width: 26.75%; }
 
+.row .fourmine { width: 29%; }
+
 .row .four { width: 33.333%; }
 
 .row .five { width: 41.667%; }
@@ -159,7 +161,11 @@ abbr { text-transform: none; }
 
 .row .six { width: 50%; }
 
+.row .sixmmiddle { width: 57.5%; }
+
 .row .seven { width: 58.333%; }
+
+.row .sevenmiddle { width: 63.5%; }
 
 .row .eight { width: 66.667%; }
 

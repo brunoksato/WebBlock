@@ -79,32 +79,30 @@ li a:hover, li a:visited{
 
 .thumb1{
   height:50px;
-  /*margin: 10px 0px 10px 0px;*/
 }
 
 .thumb2{
   height:70px;
- /* margin: 10px 14px 10px 0px;*/
 }
 
-/*.thumbright2{
-  height:70px;
-  margin: 10px 0px 10px 0px;
-}*/
+.thumb2-1{
+  height:76.5px;
+}
 
 .thumb3{
   height:150px;
-/*  margin: 10px 0px 10px 0px;*/
+}
+
+.thumb4{
+  height:156.5px;
 }
 
 .thumbRetangulo1{
   height:200px;
-/*  margin: 10px 0px 10px 0px;*/
 }
 
 .thumbRetangulo2{
   height:100px;
-/*  margin: 10px 0px 10px 0px;*/
 }
 
 .floatrelative{
@@ -112,7 +110,11 @@ li a:hover, li a:visited{
   position: relative;
 }
 
+.left0{ margin-left: 5.5%;}
+
 .left1{ margin-left: 8.5%;}
+
+.left12{ margin-left: 20.5%;}
 
 .left2{ margin-left: 50%; }
 
@@ -125,6 +127,8 @@ li a:hover, li a:visited{
 .right3{ margin-right: 80%; }
 
 .top0{ margin-top: 4.5%;}
+
+.top01{ margin-top: 6.9%;}
 
 .top1{ margin-top: 10%; }
 
