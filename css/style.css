@@ -63,13 +63,8 @@ li a:hover, li a:visited{
 }
 
 #content{
-  background-image: -ms-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
-  background-image: -moz-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
-  background-image: -o-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFFFFF), color-stop(1, #6CD5EF));
-  background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFFFFF 0%, #6CD5EF 100%);
-  background-image: radial-gradient(circle farthest-corner at center, #FFFFFF 0%, #6CD5EF 100%);
-
+  background-image: url(../images/Background.jpg);
+  background-size: cover;
   width: 100%;
 }
 
