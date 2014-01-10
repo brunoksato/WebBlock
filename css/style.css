@@ -77,6 +77,10 @@ li a:hover, li a:visited{
   margin-top: 30px;
 }
 
+.first-two{
+  margin-top: 15px;
+}
+
 .thumb1{
   height:50px;
 }
@@ -97,13 +101,6 @@ li a:hover, li a:visited{
   height:156.5px;
 }
 
-.thumbRetangulo1{
-  height:200px;
-}
-
-.thumbRetangulo2{
-  height:100px;
-}
 
 .floatrelative{
   float: left;

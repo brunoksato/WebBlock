@@ -128,7 +128,7 @@ abbr { text-transform: none; }
   .print-only { display: block !important; } }
 
 /* The Grid ---------------------- */
-.row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row { width: 1200px; max-width: 100%; min-width: 768px; margin: 0 auto; }
 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
 .row.collapse .column, .row.collapse .columns { padding: 0; }
 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
@@ -158,6 +158,8 @@ abbr { text-transform: none; }
 .row .five { width: 41.667%; }
 
 .row .fivemidlle { width: 45.6%; }
+
+.row .fivemidlle2 { width: 47%; }
 
 .row .six { width: 50%; }
 
