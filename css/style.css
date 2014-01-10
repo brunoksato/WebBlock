@@ -1,3 +1,6 @@
+html{
+  overflow: auto;
+}
 
 input[type="text"]{
   height:25px;
@@ -101,6 +104,8 @@ li a:hover, li a:visited{
   float: left;
   position: relative;
 }
+
+.left{ margin-left: 1.05%;}
 
 .left0{ margin-left: 5.5%;}
 
