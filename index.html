@@ -71,7 +71,7 @@
        <div class="twelve columns" style="text-align:left;">
           <div class="columns twomiddle first">
               <div class="thumb3 twelve floatrelative" style="background:#01703B;">
-                <div id="block0" class="block0" ng-controller="block0">
+                <div id="block0" class="block0">
                   <p>52</p>
                   <p>Unifesp</p>
                   <p>Medicina</p>
@@ -79,7 +79,7 @@
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                <div id="block1" class="block1" ng-controller="block1">
+                <div id="block1" class="block1">
                   <p>52</p>
                   <p>Unifesp</p>
                   <p>Medicina</p>
@@ -87,7 +87,7 @@
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                <div id="block2" class="block1" ng-controller="block2">
+                <div id="block2" class="block1">
                   <p>52</p>
                   <p>Unifesp</p>
                   <p>Medicina</p>
@@ -95,7 +95,7 @@
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                <div id="block3" class="block1" ng-controller="block3">
+                <div id="block3" class="block1">
                   <p>52</p>
                   <p>Unifesp</p>
                   <p>Medicina</p>
@@ -103,7 +103,7 @@
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                <div id="block4" class="block1" ng-controller="block4">
+                <div id="block4" class="block1">
                   <p>52</p>
                   <p>Unifesp</p>
                   <p>Medicina</p>
@@ -111,11 +111,11 @@
                 </div>
               </div>
               <div class="thumb3 twelve floatrelative top1" style="background:#128ECC;">
-                <div id="block5" ng-controller="block5">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block5" ng-controller="load">
+                  <p ng-model="result.block0.number">{{result.block0.number}}</p>
+                  <p ng-model="result.block0.escola">{{result.block0.escola}}</p>
+                  <p ng-model="result.block0.curso">{{result.block0.curso}}</p>
+                  <p ng-model="result.block0.ano">{{result.block0.ano}}</p>
                 </div>
               </div>
           </div>
