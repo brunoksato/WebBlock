@@ -1,16 +1,20 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <script src='js/libs/angular.js'></script>
+  <meta charset="utf-8">
+  <title>Poliedro Aprova</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/libs/jquery-1.10.2.min.js"></script>
+  <script src="js/libs/angular.js"></script>
+  <script src="js/controller.js"></script>
 </head>
 <body>
-  <div>
-    <label>Name:</label>
-    <input type="text" ng-model="unifesp" placeholder="Alterar Unifesp">
-    <hr>
-    <h1>{{unifesp}}</h1>
-  </div>
+    <div id="main" ng-app="poliedroAprova" ng-controller="edit" ng-click="hideTooltip()">
+	    <div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+		    <input type="text" ng-model="value" /> 
+        </div>
+
+	    <p ng-click="toggleTooltip($event)">{{value}}</p>
+    </div>
 </body>
 </html>

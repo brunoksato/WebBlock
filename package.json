@@ -1,0 +1,19 @@
+{
+  "name": "poliedro-aprova",
+  "version": "0.1.0",
+  "description": "This example app is so cool.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunoksato/WebBlock.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "brunoksato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoksato/WebBlock/issues"
+  }
+}

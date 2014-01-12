@@ -28,9 +28,7 @@
   <![endif]-->
 
   <link rel="stylesheet" href="css/style.css">
-  <script src='js/libs/jquery-1.10.2.min.js'></script>
-  <script src='js/libs/angular.js'></script>
-  <script src="js/controller.js"></script>
+
 </head>
 <body>
   <!--Begin main -->
@@ -79,19 +77,44 @@
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                  <a href="#">content</a>
+                <div id="block1" ng-controller="block1">
+                  <p>{{block.numero}}</p>
+                  <p>{{block.escola}}</p>
+                  <p>{{block.curso}}</p>
+                  <p>{{block.ano}}</p>
+                </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                  <a href="#">content</a>
+                <div id="block2" ng-controller="block2">
+                  <p>{{block.numero}}</p>
+                  <p>{{block.escola}}</p>
+                  <p>{{block.curso}}</p>
+                  <p>{{block.ano}}</p>
+                </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                  <a href="#">content</a>
+                <div id="block3" ng-controller="block3">
+                  <p>{{block.numero}}</p>
+                  <p>{{block.escola}}</p>
+                  <p>{{block.curso}}</p>
+                  <p>{{block.ano}}</p>
+                </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                  <a href="#">content</a>
+                <div id="block4" ng-controller="block4">
+                  <p>{{block.numero}}</p>
+                  <p>{{block.escola}}</p>
+                  <p>{{block.curso}}</p>
+                  <p>{{block.ano}}</p>
+                </div>
               </div>
               <div class="thumb3 twelve floatrelative top1" style="background:#128ECC;">
-                  <a href="#">content</a>
+                <div id="block5" ng-controller="block5">
+                  <p>{{block.numero}}</p>
+                  <p>{{block.escola}}</p>
+                  <p>{{block.curso}}</p>
+                  <p>{{block.ano}}</p>
+                </div>
               </div>
           </div>
           <div class="columns threemiddle first">
@@ -161,7 +184,7 @@
               </div>
           </div>
           <div class="columns twelve first-two">
-            <div style="row">
+            <div class="row">
               <div class="thumb3 three floatrelative" style="background:#F19018;">
                 <span>52 Unifesp Medicina 2013</span>
               </div>
@@ -233,7 +256,9 @@
   </div> <!-- // End of #main -->
 
     <!-- Our Javascript, starting with jQuery-->
-
+  <script src='js/libs/jquery-1.10.2.min.js'></script>
+  <script src='js/libs/angular.js'></script>
+  <script src="js/controller.js"></script>
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg");
