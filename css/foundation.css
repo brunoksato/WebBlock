@@ -143,6 +143,8 @@ abbr { text-transform: none; }
 
 .row .one { width: 8.333%; }
 
+.row .onemiddle { width: 14.533%; }
+
 .row .two { width: 16.667%; }
 
 .row .twomiddle { width: 19.667%; }
