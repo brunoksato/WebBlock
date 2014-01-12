@@ -11,6 +11,7 @@
   <!-- Included Font by ggoogle font -->
   <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
 
     <!-- Included CSS Files -->
   <link rel="stylesheet" href="css/reset.css">
@@ -28,7 +29,9 @@
   <![endif]-->
 
   <link rel="stylesheet" href="css/style.css">
-
+  <script src="js/libs/jquery-1.10.2.min.js"></script>
+  <script src="js/libs/angular.js"></script>
+  <script src="js/controller.js"></script>
 </head>
 <body>
   <!--Begin main -->
@@ -39,8 +42,7 @@
     <section>
       <div class="row" style="margin-top:10px;">
         <div class="six columns">
-       <!--  <img src="images/1.png" align="left"/> -->
-        <p align="left" style="margin-bottom:-20px;"><img src="images/logo.png" /></p>
+        <p style="margin-bottom:-20px; text-align: left"><img src="images/logo.png" alt="logo poliedro"/></p>
         </div>
         <div class="three columns" style="margin-top:30px;">
           <input type="text">
@@ -69,43 +71,43 @@
        <div class="twelve columns" style="text-align:left;">
           <div class="columns twomiddle first">
               <div class="thumb3 twelve floatrelative" style="background:#01703B;">
-                <div id="block0" ng-controller="block0">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block0" class="block0" ng-controller="block0">
+                  <p>52</p>
+                  <p>Unifesp</p>
+                  <p>Medicina</p>
+                  <p>2013</p>
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                <div id="block1" ng-controller="block1">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block1" class="block1" ng-controller="block1">
+                  <p>52</p>
+                  <p>Unifesp</p>
+                  <p>Medicina</p>
+                  <p>2013</p>
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                <div id="block2" ng-controller="block2">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block2" class="block1" ng-controller="block2">
+                  <p>52</p>
+                  <p>Unifesp</p>
+                  <p>Medicina</p>
+                  <p>2013</p>
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1" style="background:#01703B;">
-                <div id="block3" ng-controller="block3">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block3" class="block1" ng-controller="block3">
+                  <p>52</p>
+                  <p>Unifesp</p>
+                  <p>Medicina</p>
+                  <p>2013</p>
                 </div>
               </div>
               <div class="thumb2 fivemidlle floatrelative top1 left1" style="background:#01703B;">
-                <div id="block4" ng-controller="block4">
-                  <p>{{block.numero}}</p>
-                  <p>{{block.escola}}</p>
-                  <p>{{block.curso}}</p>
-                  <p>{{block.ano}}</p>
+                <div id="block4" class="block1" ng-controller="block4">
+                  <p>52</p>
+                  <p>Unifesp</p>
+                  <p>Medicina</p>
+                  <p>2013</p>
                 </div>
               </div>
               <div class="thumb3 twelve floatrelative top1" style="background:#128ECC;">
@@ -256,9 +258,7 @@
   </div> <!-- // End of #main -->
 
     <!-- Our Javascript, starting with jQuery-->
-  <script src='js/libs/jquery-1.10.2.min.js'></script>
-  <script src='js/libs/angular.js'></script>
-  <script src="js/controller.js"></script>
+
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg");

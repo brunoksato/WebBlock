@@ -1,11 +1,6 @@
-html{
-  overflow: auto;
-}
+html{ overflow: auto; }
 
-input[type="text"]{
-  height:25px;
-  width: 230px;
-}
+input[type="text"] { height: 25px; width: 230px; }
 
 #top{
   width: 100%;
@@ -71,38 +66,21 @@ li a:hover, li a:visited{
   padding-bottom: 15px;
 }
 
-.first{
-  margin-top: 30px;
-}
+.first{ margin-top: 30px; }
 
-.first-two{
-  margin-top: 15px;
-}
+.first-two{ margin-top: 15px; }
 
-.thumb1{
-  height:50px;
-}
+.thumb1{ height:50px; }
 
-.thumb2{
-  height:70px;
-}
+.thumb2{ height:70px; }
 
-.thumb2-1{
-  height:76.5px;
-}
+.thumb2-1{ height:76.5px; }
 
-.thumb3{
-  height:150px;
-}
+.thumb3{ height:150px; }
 
-.thumb4{
-  height:156.5px;
-}
+.thumb4{ height:156.5px; }
 
-.floatrelative{
-  float: left;
-  position: relative;
-}
+.floatrelative{ float: left; position: relative; }
 
 .left{ margin-left: 1.05%;}
 
@@ -138,23 +116,9 @@ li a:hover, li a:visited{
 
 .bottom3{ margin-bottom: 80%; }
 
-.bottom{
-  width: 100%;
-  height: 5px;
-  background-color: #014A97;
-}
+.bottom{ width: 100%; height: 5px; background-color: #014A97; }
 
-.end{
-
-}
-
-footer ul li {
-  float: left;
-  margin-top: 15px;
-  padding: 0 25px;
-  text-align: center;
-  white-space: nowrap;
-}
+footer ul li { float: left; margin-top: 15px; padding: 0 25px; text-align: center; white-space: nowrap; }
 
 footer p:first-child{
   font-weight: bold;
@@ -168,3 +132,19 @@ footer p{
   font-size: 10px;
   margin-bottom: 0px;
 }
+
+/*Blocos css*/
+
+.block0{ text-align: center; position: relative; margin: 0 auto; padding: 0; }
+.block0 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
+.block0 > p:first-child { font-size: 5em; color: #fff; padding: 0px; margin: 0px;}
+.block0 > p:first-child + p { font-size: 3em; color: #fff; padding: 0px; margin: 0px; }
+.block0 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
+.block0 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
+
+.block1{ text-align: center; position: relative; margin: 0 auto; padding: 0; }
+.block1 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
+.block1 > p:first-child { font-size: 2em; color: #fff; padding: 0px; margin: 0px;}
+.block1 > p:first-child + p { font-size: 1em; color: #fff; padding: 0px; margin: 0px; }
+.block1 > p:first-child + p + p { font-size: 0.8em; color: #fff; padding: 0px; margin: 0px;}
+.block1 > p:last-child { font-size: 0.7em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
