@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR" ng-app="poliedroApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Poliedro Aprova</title>
+    <meta name="description" content="Poliedro Aprova">
+    <meta name="author" content="Poliedro, Bruno Sato">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Included Font by google font -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+    <!-- Included CSS Files -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/foundation.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!--  <script src="assets/js/lib/modernizr.foundation.js"></script> -->
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script src="/assets/js/lib/jquery/jquery.js"></script>
+    <script src="/assets/js/lib/angular/angular.js"></script>
+    <script src="/assets/js/controller.js"></script>
+    
+    <!--<script>
+      $(function() {
+        $( ".columns" ).sortable({
+            start: function (event, ui) {
+                ui.item.toggleClass("thumb3 twelve floatrelative top1 left 1");
+            },
+            stop: function (event, ui) {
+                 ui.item.toggleClass("thumb3 twelve floatrelative top1 left 1");
+            }
+        });
+        $("#coluna1").disableSelection();
+      });
+      </script>-->
+</head>
+<body>
+    <!--Begin main -->
+    <div id="main" role="main">
+        <div class="panel clearfix" style="padding:5px;">
+            <a href="#" id="admin" class="button right" data-reveal-id="loginModal">Admin</a>
+        </div>
+      
+        <!-- Begin header and navigation -->
+
+        <section>
+            <div class="row" style="margin-top:10px;">
+                <div class="six columns">
+                    <p style="margin-bottom:-20px; text-align: left"><img src="/assets/images/logo.png" alt="logo poliedro" /></p>
+                </div>
+                <div class="three columns" style="margin-top:30px;">
+                    <input type="text">
+                </div>
+                <div class="three columns" style="margin-top:30px;">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="menu">
+                <nav class="row">
+                    <ul class="six columns">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Onde estamos</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- End header and navigation -->
+
+        <!-- Begin Content and navigation -->
+
+        <section id="content">
+            @RenderBody()
+        </section>
+
+        <!-- End Content and navigation -->
+
+        <!-- Begin footer and navigation -->
+
+        <footer style="background-color:#f8f8f8;">
+            <div class="bottom">
+                <div class="row">
+                    <div class="columns twelve">
+                        <ul>
+                            <li>
+                                <p href="http://www.facebook.com/ColegioPoliedroSJC">Ensino Médio e Fundamental SJCampos</p>
+                                <p>Rua Irmã Maria Demétria Kfuri, 700</p>
+                                <p>Jd. Esplanada - 12242-500</p>
+                                <p>(12) 3942-2271</p>
+                            </li>
+                            <li>
+                                <p href="http://www.facebook.com/CursoPoliedroSJC">Curso SJCampos</p>
+                                <p>Av. Dr Nélson D'ávila, 811</p>
+                                <p>Centro - 12245-030</p>
+                                <p>(12) 3941-2031</p>
+                            </li>
+                            <li>
+                                <p href="http://www.facebook.com/CursoPoliedroSP">Curso SP - Paraíso</p>
+                                <p>Av. Bernardino de Campos, 270</p>
+                                <p>Paraíso - 04004-041</p>
+                                <p>(11) 3051-3030</p>
+                            </li>
+                            <li>
+                                <p href="http://www.facebook.com/CursoColegioPoliedroSP">Ensino Médio e Curso SP - Vl. Mariana</p>
+                                <p>R. Madre Cabrini, 38</p>
+                                <p>Vila Mariana - 04020-001</p>
+                                <p>(11) 5083-4090</p>
+                            </li>
+                            <li>
+                                <p href="http://www.facebook.com/CursoPoliedroCampinas">Curso - Campinas</p>
+                                <p>Rua Dr. Quirino, 1625</p>
+                                <p>Centro - 13015-082</p>
+                                <p>(19) 4141-1616</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End footer -->
+
+    </div> 
+    <div id="loginModal" class="reveal-modal" data-reveal="" style="display: none;">
+        <div class="panel clearfix">
+            <div class="row">
+                <div class="columns">
+                    <label>Login</label>
+                    <input type="text" placeholder="Usuario" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns">
+                    <label>Senha</label>
+                    <input type="text" placeholder="Senha" />
+                </div>
+            </div>
+            @*<div class="row">
+                <div class="columns">
+                    <label>Input Label</label>
+                </div>
+            </div>*@
+            <div class="row">
+                <div class="columns">
+                    <a href="#" class="button left">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/assets/js/lib/foundation.min.js"></script>
+    <script src="~/assets/js/lib/foundation.reveal.js"></script>
+    <script>
+        var eventUtility = {
+            addEvent: function (el, type, fn) {
+                if (typeof addEventListener !== "undefined") {
+                    el.addEventListener(type, fn, false);
+                } else if (typeof attachEvent !== "undefined") {
+                    el.attachEvent("on" + type, fn);
+                } else {
+                    el["on" + type] = fn;
+                }
+            },
+
+            removeEvent: function (el, type, fn) {
+                if (typeof removeEventListener !== "undefined") {
+                    el.removeEventListener(type, fn, false);
+                } else if (typeof detachEvent !== "undefined") {
+                    el.detachEvent("on" + type, fn);
+                } else {
+                    el["on" + type] = null;
+                }
+            },
+
+            getTarget: function (event) {
+                if (typeof event.target !== "undefined") {
+                    return event.target;
+                } else {
+                    return event.srcElement;
+                }
+            },
+
+            preventDefault: function (event) {
+                if (typeof event.preventDefault !== "undefined") {
+                    event.preventDefault();
+                } else {
+                    event.returnValue = false;
+                }
+            }
+        };
+
+        var doc = document,
+            id = doc.querySelector("#admin");
+
+        eventUtility.addEvent(id, "click", function (e) {
+            $('#loginModal').foundation('reveal', 'open');
+            eventUtility.preventDefault(e);
+        },false);
+        
+    </script>
+</body>
+</html>

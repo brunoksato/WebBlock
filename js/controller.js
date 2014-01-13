@@ -1,37 +1,48 @@
-//function load($scope, $http) {
-
-//    $http.get('get.js').success(function(data) {
-//        $scope.result = data;
-//    });
-
-//    alert($scope.result);
-//}
-
 (function () {
-
-
 
     var app = angular.module('poliedroApp', []);
 
     app.controller('load', function ($http, $scope) {
-        $http.get('js/get.js').success(function (data) {
+        $http.get('/assets/js/get.js').success(function (data) {
             $scope.result = data;
         });
     });
 
-    //app.controller('edit', function ($scope) {
-    //    $scope.showtooltip = false;
-    //    $scope.value = 'Edit me.';
+    app.directive('contenteditable', function () {
+        return {
+            require: 'ngModel',
+            link: function (scope, elm, attrs, ctrl) {
+                // view -> model
+                elm.bind('blur', function () {
+                    scope.$apply(function () {
+                        ctrl.$setViewValue(elm.html());
+                    });
+                });
 
-    //    $scope.hideTooltip = function () {
-    //        $scope.showtooltip = false;
-    //    }
+                // model -> view
+                ctrl.render = function (value) {
+                    elm.html(value);
+                };
 
-    //    $scope.toggleTooltip = function (e) {
-    //        e.stopPropagation();
-    //        $scope.showtooltip = !$scope.showtooltip;
-    //    }
-    //});
+                // load init value from DOM
+                ctrl.$setViewValue(elm.html());
 
+                elm.bind('keydown', function (event) {
+                    console.log("keydown " + event.which);
+                    var esc = event.which == 27,
+                        el = event.target;
+
+                    if (esc) {
+                        console.log("esc");
+                        ctrl.$setViewValue(elm.html());
+                        el.blur();
+                        event.preventDefault();
+                    }
+
+                });
+
+            }
+        };
+    });
     
 } ());

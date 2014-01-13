@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="/assets/js/app.js"></script>
+
+<h4>Angular-xeditable Onaftersave (Bootstrap 3)</h4>
+<div ng-app="app" ng-controller="Ctrl">
+
+    <a href="#" editable-text="user.name" onaftersave="updateUser()">
+        {{ user.name || 'empty' }}
+    </a>
+
+    <div style="margin-top: 30px">
+        {{ user | json }}
+    </div>
+
+</div>
