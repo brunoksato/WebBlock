@@ -53,18 +53,12 @@ li a:hover, li a:visited{
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb{
   background: rgba(0, 0, 0, 0.5);
    border-radius: 10px;
 }
 
-#content{
-  background-image: url(../images/Background.jpg);
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 15px;
-}
+#content{ background-image: url(../images/Background.jpg); background-size: cover; width: 100%; padding-bottom: 15px; }
 
 .first{ margin-top: 30px; }
 
@@ -120,31 +114,36 @@ li a:hover, li a:visited{
 
 footer ul li { float: left; margin-top: 15px; padding: 0 25px; text-align: center; white-space: nowrap; }
 
-footer p:first-child{
-  font-weight: bold;
-  color:#0053a0;
-  font-size: 11px;
-  margin-bottom: 0px;
-}
+footer p:first-child{ font-weight: bold; color:#0053a0; font-size: 11px; margin-bottom: 0px; }
 
-footer p{
-  color:#0053a0;
-  font-size: 10px;
-  margin-bottom: 0px;
-}
+footer p{ color:#0053a0; font-size: 10px; margin-bottom: 0px; }
 
 /*Blocos css*/
 
-.block0{ text-align: center; position: relative; margin: 0 auto; padding: 0; }
+.block0 { text-align: center; position: relative; margin: 0 auto; padding: 0; }
 .block0 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
 .block0 > p:first-child { font-size: 5em; color: #fff; padding: 0px; margin: 0px;}
 .block0 > p:first-child + p { font-size: 3em; color: #fff; padding: 0px; margin: 0px; }
 .block0 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
 .block0 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
 
-.block1{ text-align: center; position: relative; margin: 0 auto; padding: 0; }
+.block1 { text-align: center; position: relative; margin: 0 auto; padding: 0; }
 .block1 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
 .block1 > p:first-child { font-size: 2em; color: #fff; padding: 0px; margin: 0px;}
 .block1 > p:first-child + p { font-size: 1em; color: #fff; padding: 0px; margin: 0px; }
 .block1 > p:first-child + p + p { font-size: 0.8em; color: #fff; padding: 0px; margin: 0px;}
 .block1 > p:last-child { font-size: 0.7em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
+
+.block2 { text-align: left; position: relative; margin: 0 auto; padding: 0; line-height: inherit; font-family: 'Open Sans', sans-serif; }
+.block2 > h4 { font-size: 1.5em; color: #fff; padding: 0px; margin-left: 12px; color: #98A344; }
+.block2 > nav ul li { font-size: 1em; color: #fff; padding: 0px; margin-left: 10px; list-style-type: inherit; line-height: 17px; }
+.block2 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
+.block2 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
+
+.block3 { text-align: center; position: relative; margin: 0 auto; padding: 0; }
+.block3 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
+.block3 > p:first-child { font-size: 5em; color: #fff; padding: 0px; margin: 0px;}
+.block3 > p:first-child + p { font-size: 2em; color: #fff; padding: 0px; margin: 0px; }
+.block3 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
+.block3 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
+
