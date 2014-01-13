@@ -60,6 +60,8 @@ li a:hover, li a:visited{
 
 #content{ background-image: url(../images/Background.jpg); background-size: cover; width: 100%; padding-bottom: 15px; }
 
+#content p, #content nav, #content h4{ cursor: pointer;}
+
 .first{ margin-top: 30px; }
 
 .first-two{ margin-top: 15px; }
@@ -134,16 +136,17 @@ footer p{ color:#0053a0; font-size: 10px; margin-bottom: 0px; }
 .block1 > p:first-child + p + p { font-size: 0.8em; color: #fff; padding: 0px; margin: 0px;}
 .block1 > p:last-child { font-size: 0.7em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
 
-.block2 { text-align: left; position: relative; margin: 0 auto; padding: 0; line-height: inherit; font-family: 'Open Sans', sans-serif; }
-.block2 > h4 { font-size: 1.5em; color: #fff; padding: 0px; margin-left: 12px; color: #98A344; }
-.block2 > nav ul li { font-size: 1em; color: #fff; padding: 0px; margin-left: 10px; list-style-type: inherit; line-height: 17px; }
-.block2 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
-.block2 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
+.block2 { text-align: left; padding: 0; line-height:inherit; font-family: 'Open Sans', sans-serif; width: 70%; }
+.block2 > h4 { font-size: 1.5em; color: #fff; padding: 0px; margin-left: 5px; color: #98A344; }
+.block2 > nav ul li { font-size: 0.9em; color: #fff; padding: 0px; margin-left: 5px; list-style-type: inherit; line-height: 15px; }
 
 .block3 { text-align: center; position: relative; margin: 0 auto; padding: 0; }
 .block3 > p { padding: 0px; margin: 0px; line-height: inherit; font-family: 'Open Sans', sans-serif; }
 .block3 > p:first-child { font-size: 5em; color: #fff; padding: 0px; margin: 0px;}
-.block3 > p:first-child + p { font-size: 2em; color: #fff; padding: 0px; margin: 0px; }
+.block3 > p:first-child + p { font-size: 1.6em; color: #fff; padding: 0px; margin: 0px; }
 .block3 > p:first-child + p + p { font-size: 1.2em; color: #fff; padding: 0px; margin: 0px;}
 .block3 > p:last-child { font-size: 1em; color: #fff; padding: 0px; margin: 0px; line-height: 20px; }
 
+/*designer block*/
+.block0:hover, .block1:hover, .block2:hover, .block3:hover{  opacity: 0.7; }
+.block0, .block1, .block2, .block3{ opacity: 1; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
