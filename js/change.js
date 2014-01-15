@@ -1,77 +1,116 @@
 ﻿(function () {
 
     var data = {},
-        doc = document,
-        selector = doc.querySelector;
+        doc = document;
 
-
-    var block0 = {
-        number: selector('result.block0.number').textContent,
-        escola: selector('result.block0.escola').textContent,
-        curso: selector('result.block0.curso').textContent,
-        ano: selector('result.block0.ano').textContent,
-        JSON: function () {
-            return "{ number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
-        }
+    var text = function (element) {
+        if (element.textContent === 'undefined')
+            return element.innerText;
+        else
+            return element.textContent;
     };
 
-    var block1 = {
-        number: selector('result.block1.number').textContent,
-        escola: selector('result.block1.escola').textContent,
-        curso: selector('result.block1.curso').textContent,
-        ano: selector('result.block1.ano').textContent,
-        JSON: function () {
-            return "{ block1: { number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
-        }
-    };
-
-    var block2 = {
-        number: selector('result.block2.number').textContent,
-        escola: selector('result.block2.escola').textContent,
-        curso: selector('result.block2.curso').textContent,
-        ano: selector('result.block2.ano').textContent,
-        JSON: function () {
-            return "{ block2: { number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
-        }
-    };
-
-    var block3 = {
-        number: selector('result.block3.number').textContent,
-        escola: selector('result.block3.escola').textContent,
-        curso: selector('result.block3.curso').textContent,
-        ano: selector('result.block3.ano').textContent,
-        JSON: function () {
-            return "{ block3: { number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
-        }
-    };
-
-    var block4 = {
-        number: selector('result.block4.number').textContent,
-        escola: selector('result.block4.escola').textContent,
-        curso: selector('result.block4.curso').textContent,
-        ano: selector('result.block4.ano').textContent,
-        JSON: function () {
-            return "{ block4: { number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
-        }
-    };
-
-    var block5 = {
-        number: selector('result.block3.number').textContent,
-        escola: selector('result.block3.escola').textContent,
-        curso: selector('result.block3.curso').textContent,
-        ano: selector('result.block3.ano').textContent,
-        JSON: function () {
-            return "{ block5: { number:" + this.number + "," + "escola:" + this.escola + "," + "curso:" + this.curso + "," + "ano:" + this.ano + "},";
+    var block = {
+        zero: {
+            number: text(doc.querySelector('#block0 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block0 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block0 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block0 > p:nth-child(4)'))
+        },
+        one: {
+            number: text(doc.querySelector('#block1 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block1 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block1 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block1 > p:nth-child(4)')),
+        },
+        two: {
+            number: text(doc.querySelector('#block2 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block2 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block2 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block2 > p:nth-child(4)')),
+        },
+        three: {
+            number: text(doc.querySelector('#block3 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block3 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block3 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block3 > p:nth-child(4)')),
+        },
+        four: {
+            number: text(doc.querySelector('#block4 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block4 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block4 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block4 > p:nth-child(4)')),
+        },
+        five: {
+            number: text(doc.querySelector('#block5 > p:nth-child(1)')),
+            escola: text(doc.querySelector('#block5 > p:nth-child(2)')),
+            curso: text(doc.querySelector('#block5 > p:nth-child(3)')),
+            ano: text(doc.querySelector('#block5 > p:nth-child(4)')),
         }
     };
 
     data = {
-        "block0": block0,
-        "block1": block1,
-        "block2": block2,
-        "block3": block3,
-        "block4": block4,
-        "block5": block5
+        "block0": block.zero,
+        "block1": block.one,
+        "block2": block.two,
+        "block3": block.three,
+        "block4": block.four,
+        "block5": block.five
     };
 
+    $.ajax({
+        url: '/Index/getJson',
+        type: 'POST',
+        datatype: "json",
+        traditional: true,
+        data: {
+            json: JSON.stringify(data),
+        },
+        success: function (event, request, settings) {
+            alert('json successed');
+        },
+    });
+
 });
+
+//var block0 = {
+//    number: text(doc.querySelector('#block0 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block0 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block0 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block0 > p:nth-child(4)'))
+//};
+
+//var block1 = {
+//    number: text(doc.querySelector('#block1 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block1 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block1 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block1 > p:nth-child(4)')),
+//};
+
+//var block2 = {
+//    number: text(doc.querySelector('#block2 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block2 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block2 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block2 > p:nth-child(4)')),
+//};
+
+//var block3 = {
+//    number: text(doc.querySelector('#block3 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block3 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block3 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block3 > p:nth-child(4)')),
+//};
+
+//var block4 = {
+//    number: text(doc.querySelector('#block4 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block4 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block4 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block4 > p:nth-child(4)')),
+//};
+
+//var block5 = {
+//    number: text(doc.querySelector('#block5 > p:nth-child(1)')),
+//    escola: text(doc.querySelector('#block5 > p:nth-child(2)')),
+//    curso: text(doc.querySelector('#block5 > p:nth-child(3)')),
+//    ano: text(doc.querySelector('#block5 > p:nth-child(4)')),
+//};
