@@ -10,6 +10,6 @@
   ],
    "dependencies": {
     "jquery": "*",
-	"angular": "*"
+	  "angular": "*"
   }
 }
